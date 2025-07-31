@@ -1,11 +1,16 @@
+import AboutSection from "./components/AboutSection.jsx";
 import { ContactSection } from "./components/Contact.jsx";
 import HeroSection from "./components/HeroSection.jsx";
+import Navbar from "./components/Navbar.jsx";
+import PremiumNavbar from "./components/Navbar.jsx";
+import PremiumNav from "./components/Navbar.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import { SkillsSection } from "./components/SkillsSction.jsx";
 
 function App() {
   return (
     <div className="min-h-screen relative overflow-auto">
+      <Navbar />
       {/* hero Section */}
       <div className="relative mb-7 md:mb-37">
         <HeroSection />
@@ -20,6 +25,7 @@ function App() {
           ></path>
         </svg>
       </div>
+      <AboutSection />
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />

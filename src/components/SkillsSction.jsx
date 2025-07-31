@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 export const SkillsSection = () => {
   return (
     <section className="py-12 sm:py-20 px-4">
@@ -46,7 +46,10 @@ export const SkillsSection = () => {
               color: "from-purple-500 to-purple-700",
             },
           ].map((category) => (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
               key={category.category}
               className="border h-fit border-gray-700 rounded-lg p-6 z-10 bg-[#101828] transform hover:scale-[1.02] transition-all"
             >
@@ -70,7 +73,7 @@ export const SkillsSection = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
           <div className="hidden lg:flex justify-center relative">
             <div className="h-52 border  border-gray-700"></div>
