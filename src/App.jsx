@@ -12,12 +12,9 @@ function App() {
     <div className="min-h-screen relative overflow-auto">
       <Navbar />
       {/* hero Section */}
-      <div className="relative mb-7 md:mb-37">
+      <div className="relative mb-7 md:mb-36">
         <HeroSection />
-        <svg
-          className="absolute  opacity-10 bottom-[-10] w-full"
-          viewBox="0 0 1440 320"
-        >
+        <svg className="absolute  opacity-10  w-full" viewBox="0 0 1440 320">
           <path
             fill="#155dfc"
             fillOpacity="1"
