@@ -3,22 +3,79 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "E-commerce Dashboard",
+    title: " Business-Nexus",
     description:
-      "A modern dashboard with dark mode, real-time charts, and responsive design",
+      "A modern networking app that helps entrepreneurs and investors connect, chat, and collaborate in real time.",
     image: "/nexus.png",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Chart.js"],
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+    ],
+
     github: "https://github.com/your-username/ecommerce-dashboard",
     live: "https://business-nexus-production-5ee7.up.railway.app/",
   },
   {
-    title: "Social Media App",
+    title: "StoryHub app",
     description:
-      "Full-featured social  platform with real-time messaging and notifications",
-    image: "/img.png",
-    tags: ["Next.js", "Socket.io", "Prisma", "TailwindCSS"],
-    github: "https://github.com/your-username/social-media-app",
-    live: "https://your-live-site.com/social",
+      "A storytelling platform where users can explore story types, read episodes, and manage stories via an admin panel.",
+    image: "/storyapp1.png",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Axios",
+    ],
+    github: "https://www.github.com/haroonkpk/storyHub-app",
+    live: "https://www.github.com/haroonkpk/storyHub-app",
+  },
+  {
+    title: "E-commerce marketplace",
+    description:
+      "A full-featured e-commerce marketplace with product listings, user authentication, admin dashboard and cart system",
+    image: "/brand.png",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "Axios",
+      "Cloudinary",
+    ],
+    github: "https://github.com/haroonkpk/fullstack-ecommerce-marketplace",
+    live: "https://github.com/haroonkpk/fullstack-ecommerce-marketplace",
+  },
+  {
+    title: "chat application",
+    description:
+      "A real-time chat application with user authentication, online status tracking, and private messaging using Socket.io and MERN stack.",
+    image: "/chatapp.png",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "Zustand",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.io",
+      "daisyUi",
+      "JWT",
+      "Axios",
+      "Cloudinary",
+    ],
+    github: "https://github.com/haroonkpk/chatapp",
+    live: "https://github.com/haroonkpk/chatapp",
   },
 ];
 
@@ -88,6 +145,17 @@ export default function ProjectsSection() {
               </div>
             </motion.div>
           ))}
+        </div>
+        {/* for more button */}
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-18 animate-bounce">
+          <a
+            href="http://www.github.com/haroonkpk"
+            target="_blank"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-medium hover:opacity-90 transition-opacity"
+          >
+           For more View GitHub
+            <ExternalLink size={21}/>
+          </a>
         </div>
       </div>
     </section>
