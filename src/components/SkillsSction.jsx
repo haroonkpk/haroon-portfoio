@@ -2,10 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 export const SkillsSection = () => {
   return (
-    <section className="py-12 sm:py-20 px-4">
+    <section id="skills" className="py-12 sm:py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-16 text-center">
-          Technical Expertise
+          Technical <span className="text-purple-400">Expertise</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-y-0 lg:gap-x-4 sm:gap-x-8">
           {[
@@ -13,11 +13,10 @@ export const SkillsSection = () => {
               category: "Frontend Development",
               skills: [
                 { name: "React & Next.js", level: 95 },
-                { name: "JavaScript", level: 90 },
-                { name: "Zustand", level: 85 },
-                { name: "CSS-3", level: 95 },
-                { name: "Tailwind Css", level: 95 },
-                { name: "Web Animation", level: 85 },
+                { name: "JavaScript (ES6+)", level: 90 },
+                { name: "Zustand & State Mgmt", level: 85 },
+                { name: "CSS3 & Tailwind CSS", level: 95 },
+                { name: "Web Animations (Framer, GSAP)", level: 75 },
               ],
               icon: "🎨",
               color: "from-blue-500 to-blue-700",
@@ -25,11 +24,11 @@ export const SkillsSection = () => {
             {
               category: "Backend & APIs",
               skills: [
-                { name: "Node.js", level: 90 },
-                { name: "RESTful APIs", level: 95 },
-                { name: "Express", level: 85 },
-                { name: "Database Design", level: 88 },
-                { name: "MongoDB", level: 88 },
+                { name: "Node.js & Express", level: 90 },
+                { name: "REST APIs & Auth", level: 95 },
+                { name: "MongoDB & Mongoose", level: 88 },
+                { name: "JWT & Bcrypt", level: 88 },
+                { name: "File Upload (Cloudinary)", level: 85 },
               ],
               icon: "⚡",
               color: "from-green-500 to-green-700",
@@ -37,10 +36,10 @@ export const SkillsSection = () => {
             {
               category: "Performance & DevOps",
               skills: [
-                { name: "Web Performance", level: 92 },
-                { name: "CI/CD", level: 88 },
-                { name: "Docker", level: 85 },
-                { name: "AWS", level: 82 },
+                { name: "Git & GitHub", level: 92 },
+                { name: "Postman & API Testing", level: 88 },
+                { name: "CI/CD (Render, Railway, Vercel, Netlify)", level: 85 },
+                { name: "VS Code & DevTools", level: 90 },
               ],
               icon: "🚀",
               color: "from-purple-500 to-purple-700",
@@ -75,18 +74,33 @@ export const SkillsSection = () => {
               </div>
             </motion.div>
           ))}
-          <div className="hidden lg:flex justify-center relative">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            className="hidden lg:flex justify-center relative"
+          >
             <div className="h-52 border  border-gray-700"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent transition-transform duration-300 group-hover:scale-105" />
-          </div>
-          <div className="hidden lg:flex justify-center relative">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            className="hidden lg:flex justify-center relative"
+          >
             <div className="absolute top-[-50px] h-62 border  border-gray-700"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent transition-transform duration-300 group-hover:scale-105" />
-          </div>
-          <div className="hidden lg:flex justify-center relative">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            className="hidden lg:flex justify-center relative"
+          >
             <div className="absolute top-[-100px] h-72 border border-gray-700"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent transition-transform duration-300 group-hover:scale-105" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

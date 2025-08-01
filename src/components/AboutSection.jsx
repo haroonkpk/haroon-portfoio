@@ -70,7 +70,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-20 mt-40 px-4 bg-transparent ">
+    <section id="about" className="py-20 md:mt-40 px-4 bg-transparent ">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +78,7 @@ export default function AboutSection() {
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold  mb-12"
         >
-          About Me
+          About <span className="text-purple-400">Me</span>
         </motion.h2>
 
         <motion.p
@@ -98,7 +98,7 @@ export default function AboutSection() {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, }}
+              initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.3 }}
               className="border border-gray-700 bg-[#0B1120]/60 p-6 rounded-lg hover:scale-[1.02] transition-transform"
