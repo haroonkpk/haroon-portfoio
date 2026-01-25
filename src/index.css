@@ -1,10 +1,24 @@
 @import "tailwindcss";
 @import "@fontsource/inter";
 
-
-html {
-    scroll-behavior: smooth;
+html.lenis,
+html.lenis body {
+  height: auto;
+  background-color: #282a57;
 }
-body {
-	background-color: #101828;
-}               
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
