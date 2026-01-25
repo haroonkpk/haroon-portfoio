@@ -4,6 +4,7 @@
 html.lenis,
 html.lenis body {
   height: auto;
+  scroll-behavior: smooth;
   background-color: #282a57;
 }
 

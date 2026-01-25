@@ -37,7 +37,7 @@ function HeroSection() {
   const opacityBtn = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <div ref={ref} className="relative w-full h-[300vh] bg-[#282a57]">
+    <div id="home" ref={ref} className="relative w-full h-[300vh] bg-[#282a57]">
       {/* Sticky Container */}
       <motion.div
         style={{ background }}
@@ -115,7 +115,7 @@ function HeroSection() {
                 letterSpacing: "-0.02em",
                 lineHeight: "1.2",
               }}
-              className="text-3xl sm:text-6xl mt-30 md:text-[5rem] font-bold font-montserrat"
+              className="text-3xl sm:text-6xl mt-30 sm:mt-0 md:text-[5rem] font-bold font-montserrat"
             >
               Muhammad <span className="text-[#C44E52]">Haroon </span>
             </h1>
