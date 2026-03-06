@@ -160,7 +160,7 @@ function HeroSection() {
                 View GitHub
               </a>
               <a
-                href="/Muhammad-Haroon-Resume.pdf"
+                href="/Muhammad_Haroon_Resume.pdf"
                 target="_blank"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-4xl bg-white/5 border border-white/10 backdrop-blur-sm font-medium hover:bg-white/10 hover:border-white/20 transition-all duration-300 w-full sm:w-auto"
               >
